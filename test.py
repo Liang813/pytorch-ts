@@ -9,7 +9,7 @@ from pts.dataset import to_pandas
 
 
 if __name__ == '__main__':
-  url = "https://raw.githubusercontent.com/numenta/NAB/master/data/realTweets/Twitter_volume_AMZN.csv"
+  url = "Twitter_volume_AMZN.csv"
   df = pd.read_csv(url, header=0, index_col=0, parse_dates=True)
   
   training_data = ListDataset(
