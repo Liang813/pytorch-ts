@@ -104,13 +104,13 @@ def validated(base_model=None):
 
         if base_model is None:
             PydanticModel = create_model(
-                model_name=f"{init_clsnme}Model",
+                __model_name=f"{init_clsnme}Model",
                 __config__=BaseValidatedInitializerModel.Config,
                 **init_fields,
             )
         else:
             PydanticModel = create_model(
-                model_name=f"{init_clsnme}Model",
+                __model_name=f"{init_clsnme}Model",
                 __base__=base_model,
                 **init_fields,
             )
