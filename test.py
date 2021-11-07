@@ -24,4 +24,4 @@ if __name__ == '__main__':
                               trainer=Trainer(epochs=10,
                                               device=device))
   predictor = estimator.train(training_data=training_data)
-  
+  print("You'll get 'RuntimeError: Expected tensor for argument...' when you run it on Windows")
